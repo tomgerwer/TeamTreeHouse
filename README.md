@@ -31,3 +31,11 @@ Below are the topics that were covered and the content that was taught:
         Primitive Data Types
         Math objects
         Create random numbers
+    
+    JavaScript Functions
+        Calling functions
+        Returning a value/values
+        Parameters and Argument(s)
+        Variable scope
+        Functions using arrow syntax
+        Default paramters

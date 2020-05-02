@@ -39,3 +39,7 @@ Below are the topics that were covered and the content that was taught:
         Variable scope
         Functions using arrow syntax
         Default paramters
+
+    CSS Layout Basics
+        CSS reset with normalize
+                

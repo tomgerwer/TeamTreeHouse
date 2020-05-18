@@ -1,7 +1,7 @@
 let questions = [
-    ['How many states are in the United States?', 50],
-    ['How many branches of government are there in the US?', 3],
-    ['How many presidents have there been currently (2020)?', 45]
+    {question: 'How many states are in the United States?', answer: 50},
+    {question: 'How many branches of government are there in the US?', answer: 3},
+    {question: 'How many presidents have there been currently (2020)?', answer: 45}
 ]
 
 let correctAnswers = 0;
@@ -26,8 +26,8 @@ function buildList(arr) {
 }
 
 for (let i = 0; i < questions.length; i += 1) {
-    question = questions[i][0];
-    answer = questions[i][1];
+    question = questions[i].question;
+    answer = questions[i].answer;
     response = prompt(question);
     response = parseInt(response);
     if (response === answer) {
@@ -38,7 +38,7 @@ for (let i = 0; i < questions.length; i += 1) {
     }
 }
 
-html = "You go " + correctAnswers + " question(s) right.";
+html = "You got " + correctAnswers + " question(s) right.";
 html += '<h2>You got these questions correct:</h2>';
 html += buildList(correct);
 html += '<h2>You got these questions wrong:</h2>';
